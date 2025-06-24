@@ -5,7 +5,7 @@ Project Structure
 devops-assignment/
 ├── docker-compose.yml       # Defines services, networking, and health checks 
 ├── nginx/
-│   ├── Dockerfile          # Builds Nginx container with custom config
+│   ├── Dockerfile          # Builds Nginx container with custom config 
 │   └── nginx.conf          # Nginx configuration for reverse proxy and logging
 ├── service_1/
 │   ├── Dockerfile          # Builds Go service
