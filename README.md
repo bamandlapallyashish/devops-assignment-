@@ -39,11 +39,13 @@ Git for cloning the repository.
 
 
 Clone the Repository:
+
 git clone https://github.com/your-username/devops-assignment.git
 cd devops-assignment
 
 
 Run the Application:
+
 docker-compose up --build
 
 This builds and starts:
@@ -54,6 +56,7 @@ service2 (Python Flask) on port 8002
 
 
 Test Endpoints:
+
 curl http://localhost:8080/service1/ping    # Returns {"service":"1","status":"ok"}
 curl http://localhost:8080/service1/hello   # Returns {"message":"Hello from Service 1"}
 curl http://localhost:8080/service2/ping    # Returns {"service":"2","status":"ok"}
@@ -61,9 +64,11 @@ curl http://localhost:8080/service2/hello   # Returns {"message":"Hello from Ser
 
 
 View Logs:
+
 docker logs devops-assignment-nginx-1
 
 Logs show custom format with timestamps and request paths, e.g.:
+
 172.20.0.1 - - [24/Jun/2025:20:47:07 +0530] "GET /service1/ping HTTP/1.1" 200 36 "-" "curl/7.68.0"
 
 
