@@ -6,6 +6,7 @@ This project sets up a Dockerized application with two services (service1 and se
 
 
 Project Structure
+
 devops-assignment/
 ├── docker-compose.yml       # Defines services, networking, and health checks 
 ├── nginx/
