@@ -3,7 +3,7 @@ Overview
 This project sets up a Dockerized application with two services (service1 and service2) behind an Nginx reverse proxy. The services are written in Go (service1) and Python Flask (service2), each exposing /ping and /hello endpoints. Nginx routes requests from /service1/* to service1:8001 and /service2/* to service2:8002, using a custom log format to include timestamps and request paths.
 Project Structure
 devops-assignment/
-├── docker-compose.yml       # Defines services, networking, and health checks
+├── docker-compose.yml       # Defines services, networking, and health checks 
 ├── nginx/
 │   ├── Dockerfile          # Builds Nginx container with custom config
 │   └── nginx.conf          # Nginx configuration for reverse proxy and logging
